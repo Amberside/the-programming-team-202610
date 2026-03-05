@@ -1,0 +1,64 @@
+body {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #529736;
+}
+
+h1 {
+        color: #450364;
+        font-size: 65px;
+    }
+ body{
+    background: linear-gradient(270deg, #46ee04, #9cfa7f, #76c442, #67be44);
+    background-size: 400% 400%;
+    animation: gradientShift 8s linear infinite;
+ }
+ 
+ @keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+.NameAbout h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 125px;
+    padding-bottom: 25px;
+    }
+
+.NameAbout p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+    font-size: 20px;
+}
+
+.skills-hobbies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 550px;
+}
+
+.skills h2{
+    color: #450364;
+}
+
+.hobbies h2{
+    color: #450364;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
