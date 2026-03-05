@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgb(221, 194, 135);
+  padding: 1rem;
+  gap: 5rem;
+}
+
+.spinner {
+  animation: spin 10s linear infinite;
+  transform: translateZ(0);
+}
+
+header h1 a {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: #f36523;
+  }
+}
+
+section {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section p {
+  width: 40%;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.divider {
+  background-color: black;
+  height: 1px;
+}
+
+#navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: #f36523;
+  }
+}
+
+footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
