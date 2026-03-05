@@ -50,9 +50,9 @@ let imageList = [
 
 let students = [
   {
-    path: "amberle",
-    lastName: "Seidl",
-    firstName: "Amberle",
+    path: "Adam",
+    lastName: "Kilian",
+    firstName: "Adam",
   }
 ];
 
