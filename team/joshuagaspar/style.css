@@ -1,0 +1,66 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  background-color: blue;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 3em;
+  color: hotpink;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  color: cyan;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  color: white;
+}
+a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: red;
+  color: greenyellow;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: maroon;
+}
+
+.spinner {
+  margin: 3rem auto;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.col {
+  width: 50%;
+}
+
+.bottom {
+  margin: 1rem auto;
+  text-align: center;
+}
