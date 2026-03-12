@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  #navbar {
+    margin: 10px;
+  }
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -15,8 +28,17 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", "Segoe UI", Tahoma, Verdana, sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -24,9 +46,14 @@ header {
   align-items: center;
   justify-content: space-around;
 
-  background-color: rgb(221, 194, 135);
+  background-color: #ddc287;
   padding: 1rem;
   gap: 5rem;
+}
+
+#eri-image-header {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
 }
 
 .spinner {
@@ -45,9 +72,6 @@ header h1 a {
 
 section {
   padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 section h2 {
@@ -55,7 +79,6 @@ section h2 {
 }
 
 section p {
-  width: 40%;
   text-align: left;
   padding: 1rem 0;
 }
@@ -66,6 +89,10 @@ section p {
 }
 
 #navbar a {
+  background-color: rgb(223, 223, 223);
+  padding: 15px;
+  border: 1px black solid;
+  border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -75,8 +102,57 @@ section p {
   }
 }
 
+main {
+  flex: 1;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card-1,
+#card-3,
+#card-6 {
+  background-color: #464646;
+}
+
 footer {
+  background: #464646;
+  background: linear-gradient(
+    89deg,
+    rgba(70, 70, 70, 1) 0%,
+    rgba(243, 101, 35, 1) 12%,
+    rgba(221, 194, 135, 1) 21%,
+    rgba(176, 139, 65, 1) 29%,
+    rgba(97, 97, 97, 1) 36%,
+    rgba(74, 74, 74, 1) 50%,
+    rgba(97, 97, 97, 1) 59%,
+    rgba(176, 139, 65, 1) 68%,
+    rgba(221, 194, 135, 1) 74%,
+    rgba(255, 255, 255, 1) 84%,
+    rgba(207, 207, 207, 1) 92%,
+    rgba(70, 70, 70, 1) 100%
+  );
   margin-top: 25px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+#eri-image-footer {
+  padding: 10px;
+}
+
+#copyright-info {
+  padding: 15px;
+  color: rgb(255, 255, 255);
 }
