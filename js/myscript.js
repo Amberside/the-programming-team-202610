@@ -65,7 +65,7 @@ let students = [
     firstName: "Joshua",
   },
   {
-    path: "adam",
+    path: "Adam",
     lastName: "Kilian",
     firstName: "Adam",
   }
