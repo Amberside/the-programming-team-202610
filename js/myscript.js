@@ -68,6 +68,11 @@ let students = [
     path: "adam",
     lastName: "Kilian",
     firstName: "Adam",
+  },
+  {
+    path: "Quinnlan",
+    lastName: "Arcelo",
+    firstName: "Quinnlan",
   }
 ];
 
