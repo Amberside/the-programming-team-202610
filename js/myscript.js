@@ -77,7 +77,7 @@ let students = [
   {
     path: "john",
     lastName: "safarian",
-    firstname: "john",
+    firstname: "John",
   },
 
 ];
